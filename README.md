@@ -1,5 +1,9 @@
 # SysML v2 highlighting for Marp
 
+The talk deck renders online at
+<https://mycr0ft.github.io/sysmlv2transformation/> (GitHub Pages from this
+repo, `master` branch root).
+
 A small, reusable Marp slide-deck template that adds real **SysML v2** syntax
 highlighting to code fences. Built on [Marp] + [Shiki] using a TextMate grammar
 sourced from the [SysML v2 VS Code extension][grammar-src].
