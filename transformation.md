@@ -542,9 +542,8 @@ Diffs across revisions: `mdzip_diff.py before.mdzip after.mdzip`.
 
 **`umlmeta` — transformation / abstract syntax**
 
-- AS transformer grew from the wave-A subset to **waves A–H in v0.2.0**: use cases + actors, interfaces → PortDefinition, imports + recursive namespaces, associations, and InformationFlows — with the multiplicity elision closed (AS MultiplicityRange carrier for properties, association ends, parameters)
-- Waves I–N landed the same day: interaction machinery AS-side, conjugation, FullPort → PartUsage with PortData metadata, activity pins + object-flow ends, transition-from-initial wiring, opaque bodies
-- Still textual-pipeline-only in the AS graph: full state machines and requirements
+- AS transformer spans **waves A–S** — structural core, state machines (regions + transitions + triggers), activities (pins, object flows, guarded edges), requirements + the verification chain (verdict return, objective choreography, Refine/Trace), use cases + actors, ports/interfaces incl. conjugation and FullPort → PartUsage, imports, associations + **AS multiplicities**, InformationFlows, interactions, value-specification literals
+- Documented elisions ride the file's realization table (association-end qualifiers/defaults, conjugated-port typing, use-case objectives, function synthesis/assignments, guard and object-flow tail forms); anything truly unmapped raises `UnmappedFeature`
 
 **`sysmlpy` — SysML v2 reader / interchange**
 
