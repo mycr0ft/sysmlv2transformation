@@ -1293,8 +1293,6 @@ section.compact p { margin-bottom: 7px; }
 <p><strong><code>sysmlpy</code> — SysML v2 reader / interchange</strong></p>
 <ul>
 <li>Interaction syntax is currently mapped by <code>umlmeta</code> but elided because the <code>sysmlpy</code> reader has no interaction element</li>
-<li><code>allocation def</code> with redefined ends passed <code>parse</code> but failed <code>export</code> (≤ v0.97.1) — found through this project and <strong>fixed upstream in v0.97.2</strong>: the end-declaration redefinitions had been dropped on the dump side of the export reparse</li>
-<li>An upstream reader bug found by building the workflow in the open, not a transformation mapping gap</li>
 </ul>
 <p><strong>Evidence boundary</strong></p>
 <ul>

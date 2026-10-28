@@ -548,8 +548,6 @@ Diffs across revisions: `mdzip_diff.py before.mdzip after.mdzip`.
 **`sysmlpy` — SysML v2 reader / interchange**
 
 - Interaction syntax is currently mapped by `umlmeta` but elided because the `sysmlpy` reader has no interaction element
-- `allocation def` with redefined ends passed `parse` but failed `export` (≤ v0.97.1) — found through this project and **fixed upstream in v0.97.2**: the end-declaration redefinitions had been dropped on the dump side of the export reparse
-- An upstream reader bug found by building the workflow in the open, not a transformation mapping gap
 
 **Evidence boundary**
 
