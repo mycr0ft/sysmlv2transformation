@@ -542,7 +542,7 @@ Diffs across revisions: `mdzip_diff.py before.mdzip after.mdzip`.
 
 **`umlmeta` — transformation / abstract syntax**
 
-- AS transformer spans **waves A–S** — structural core, state machines (regions + transitions + triggers), activities (pins, object flows, guarded edges), requirements + the verification chain (verdict return, objective choreography, Refine/Trace), use cases + actors, ports/interfaces incl. conjugation and FullPort → PartUsage, imports, associations + **AS multiplicities**, InformationFlows, interactions, value-specification literals
+- AS transformer spans **waves A–U** — structural core, state machines (regions + transitions + triggers), activities (pins, object flows, guarded edges), requirements + the verification chain (verdict return, objective choreography, Refine/Trace), use cases + actors, ports/interfaces incl. conjugation and FullPort → PartUsage, imports, associations + **AS multiplicities**, InformationFlows, interactions, value-specification literals, **allocations** (end usages typed by the mapped end definitions), probability/rate metadata
 - Documented elisions ride the file's realization table (association-end qualifiers/defaults, conjugated-port typing, use-case objectives, function synthesis/assignments, guard and object-flow tail forms); anything truly unmapped raises `UnmappedFeature`
 
 **`sysmlpy` — SysML v2 reader / interchange**

@@ -52,7 +52,7 @@ These come from the umlmeta/CSER evidence base and were not reproducible in
 this folder (umlmeta checks and external corpora are not vendored here).
 Re-confirm against the source repos before presenting:
 
-- "481 checks across 15 suites" (umlmeta aggregate)
+- "551 checks across 19 suites" (umlmeta aggregate, v0.2.0 — re-confirmed against CHANGELOG 2026-10-27; post-release waves I–U grew it further, AS suite at 135)
 - R2 CMOF generation: 175 classes, 319 associations, 623 OCL constraints
 - 12/12 `.mdzip` stress corpus imports
 - AP242: 28 files / 300,851 instances; XPect 123/123
