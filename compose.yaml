@@ -1,0 +1,25 @@
+services:
+  umlmeta:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: umlmeta-sysmlpy:local
+    working_dir: /workspace
+    environment:
+      PYTHONPATH: /workspace
+    volumes:
+      - .:/workspace:Z
+    command: ["python", "check_xmi_vehicle.py"]
+
+  shell:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: umlmeta-sysmlpy:local
+    working_dir: /workspace
+    environment:
+      PYTHONPATH: /workspace
+    volumes:
+      - .:/workspace:Z
+    entrypoint: ["python"]
+    command: ["-c", "import diagramboxes, sysmlpy, lxml, pint; print('sysmlpy', getattr(sysmlpy, '__version__', 'installed')); print('diagramboxes', diagramboxes.__file__); print('lxml', lxml.__version__); print('pint', pint.__version__)"]

@@ -1,0 +1,185 @@
+@startuml
+
+skinparam monochrome true
+skinparam wrapWidth 300
+skinparam defaultFontSize 12
+skinparam defaultFontName Helvetica
+
+' Definitions: sharp corners, plain background
+skinparam rectangle<<part def>> {
+    RoundCorner 0
+    BackgroundColor white
+    StereotypeFontSize 11
+}
+skinparam rectangle<<item def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<attribute def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<port def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<action def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<state def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<requirement def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<view def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<viewpoint def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+skinparam rectangle<<enumeration def>> {
+    RoundCorner 0
+    BackgroundColor white
+}
+
+' Usages: rounded corners, plain background
+skinparam rectangle<<part>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<item>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<attribute>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<port>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<action>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<state>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<requirement>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<view>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<viewpoint>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+skinparam rectangle<<enumeration>> {
+    RoundCorner 15
+    BackgroundColor white
+}
+
+' Views as folders
+skinparam folder<<view def>> {
+    BackgroundColor white
+}
+skinparam folder<<view>> {
+    BackgroundColor white
+}
+
+top to bottom direction
+
+title gv [model] ae97b001-b7cf-422b-9187-bfbe3594a54a
+
+hide circle
+
+rectangle "Wheel" as E1 <<part def>>
+rectangle "Vehicle" as E2 <<part def>>
+rectangle "wheels" as E3 <<part>>
+rectangle "mass" as E4 <<attribute>>
+rectangle "Kilogram" as E5 <<attribute def>>
+rectangle "paint" as E6 <<attribute>>
+rectangle "VehicleColor" as E7 <<enumeration def>>
+rectangle "pwr" as E8 <<port>>
+rectangle "PowerIf" as E9 <<port def>>
+rectangle "aux" as E10 <<port>>
+rectangle "frontAxle" as E11 <<part>>
+rectangle "Axle" as E12 <<part def>>
+rectangle "rearAxle" as E13 <<part>>
+rectangle "rawA" as E14 <<attribute>>
+rectangle "rawB" as E15 <<attribute>>
+rectangle "totalMass" as E16 <<action>>
+rectangle "axleLink" as E17 <<connection>>
+rectangle "massBind" as E18 <<binding>>
+rectangle "MoveCommand" as E19 <<item def>>
+rectangle "Operator" as E20 <<part def>>
+rectangle "OpMode" as E21 <<state def>>
+rectangle "on" as E22 <<state>>
+rectangle "off" as E23 <<state>>
+rectangle "Generate" as E24 <<action def>>
+rectangle "OperateVehicle" as E25 <<use case def>>
+rectangle "StartEngine" as E26 <<use case def>>
+rectangle "Car" as E27 <<part def>>
+rectangle "spareWheel" as E28 <<part>>
+rectangle "CarIsVehicle" as E29 <<requirement>>
+rectangle "DerivedReq" as E30 <<requirement>>
+rectangle "WheelToAxle" as E31 <<connection def>>
+rectangle "CheckMass" as E32 <<verification>>
+rectangle "unnamed" as E33 <<connection>>
+rectangle "RefineData" as E34 <<metadata def>>
+rectangle "refineTag" as E35 <<dependency>>
+rectangle "refinesVeh" as E36 <<dependency>>
+rectangle "usesLegacy" as E37 <<dependency>>
+rectangle "unnamed" as E38 <<allocation def>>
+
+E2 *-- E3
+E3 --:|> E1 : types
+E2 *-- E4
+E4 --:|> E5 : types
+E2 *-- E6
+E6 --:|> E7 : types
+E2 *-- E8
+E8 --:|> E9 : types
+E2 *-- E10
+E2 *-- E11
+E11 --:|> E12 : types
+E2 *-- E13
+E13 --:|> E12 : types
+E2 *-- E14
+E14 --:|> E5 : types
+E2 *-- E15
+E15 --:|> E5 : types
+E2 *-- E16
+E2 *-- E17
+E2 *-- E18
+E21 *-- E22
+E21 *-- E23
+E27 *-- E28
+E28 --:|> E1 : types
+
+legend right
+  <b>SysML v2 Relationship Legend</b>
+  Relationship: Notation
+  Feature Typing: --:|>
+  Specialization: --|>
+  Redefinition: --||>
+  Composite (owns): *--
+  Shared: o--
+  Binding: -[thickness=4]-
+  Connector: -[thickness=2]->
+  Flow: -->
+  Dependency: ..>>
+endlegend
+
+@enduml

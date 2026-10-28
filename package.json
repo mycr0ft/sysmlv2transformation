@@ -1,0 +1,17 @@
+{
+  "name": "sysml-marp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marp deck build with SysML v2 syntax highlighting via a custom Shiki engine",
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.5.0",
+    "@marp-team/marp-core": "^4.4.0",
+    "shiki": "^4.4.2"
+  },
+  "scripts": {
+  "build": "marp transformation.md --engine ./engine.js --html --no-stdin -o transformation.html",
+  "pdf": "marp transformation.md --engine ./engine.js --pdf --allow-local-files --no-stdin -o transformation.pdf",
+  "watch": "marp -w --engine ./engine.js --html transformation.md",
+  "preview": "marp -s --engine ./engine.js --html ."
+  }
+}

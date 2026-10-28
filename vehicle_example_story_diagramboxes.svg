@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-9.0 -3.0 361.0 223.0" width="361.0pt" height="223.0pt">
+<rect x="6.0" y="18.0" width="301.5" height="157.5" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1.5" />
+<g>
+<polygon points="6.0,18.0 283.4,18.0 289.4,24.0 289.4,33.0 6.0,33.0" fill="white" stroke="#1a1a1a" stroke-width="1.5" />
+<text x="10.5" y="28.5" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="start">bdd [package] VehicleExample [VehicleExample — the story in one slide]</text>
+</g>
+<rect x="45.0" y="45.0" width="69.0" height="49.5" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1.5" />
+<text x="79.5" y="57.0" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">«part def»</text>
+<text x="79.5" y="64.5" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">Vehicle</text>
+<line x1="48.0" y1="66.0" x2="111.0" y2="66.0" stroke="#1a1a1a" stroke-width="1.5" fill="none" />
+<text x="79.5" y="79.5" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">wheels[1..4] : Wheel</text>
+<text x="79.5" y="87.0" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">mass : Kilogram</text>
+<rect x="114.0" y="60.0" width="12.0" height="18.0" fill="white" stroke="#1a1a1a" stroke-width="1.5" />
+<rect x="187.5" y="142.5" width="39.0" height="27.0" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1.5" />
+<text x="207.0" y="154.5" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">«part def»</text>
+<text x="207.0" y="162.0" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">Wheel</text>
+<rect x="262.5" y="82.5" width="39.0" height="27.0" fill="#f0f0f0" stroke="#1a1a1a" stroke-width="1.5" />
+<text x="282.0" y="94.5" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">«port def»</text>
+<text x="282.0" y="102.0" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">PowerIf</text>
+<polyline points="79.5,94.5 79.5,118.5 207.0,118.5 207.0,142.5" stroke="#1a1a1a" stroke-width="1.5" fill="none" />
+<polygon points="79.5,94.5 83.2,101.9 79.5,109.2 75.8,101.9" fill="black" stroke="black" stroke-width="1.5" />
+<g>
+<rect class="halo" x="119.7" y="91.2" width="45.6" height="9.3" fill="white" />
+<text x="142.5" y="97.5" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="middle">wheels : Wheel</text>
+</g>
+<g>
+<rect class="halo" x="130.2" y="65.8" width="42.6" height="9.3" fill="white" />
+<text x="132.0" y="72.0" fill="#1a1a1a" font-size="5.0" font-family="Helvetica, DejaVu Sans, sans-serif" text-anchor="start">pwr : PowerIf</text>
+</g>
+</svg>

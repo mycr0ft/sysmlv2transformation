@@ -1,0 +1,14 @@
+[project]
+name = "sysmlv2transformation"
+version = "0.1.0"
+description = "SysML v1 XMI reader/writer and SysML v2 transformation utilities"
+requires-python = ">=3.12"
+dependencies = [
+    "lxml>=6.1,<7",
+    "pint>=0.26,<1",
+    "sysmlpy==0.97.1",
+    "diagramboxes @ git+https://github.com/mycr0ft/diagramboxes.git",
+]
+
+[tool.uv]
+package = false
