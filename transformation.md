@@ -46,6 +46,8 @@ style: |
 
 ---
 
+<!-- _class: compact -->
+
 ## What this talk will do
 
 A practical look at how to build on existing modeling investments while
