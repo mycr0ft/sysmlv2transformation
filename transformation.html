@@ -1287,12 +1287,8 @@ section.compact p { margin-bottom: 7px; }
 <h2 id="current-limits-the-honest-slide">Current limits (the honest slide)</h2>
 <p><strong><code>umlmeta</code> — transformation / abstract syntax</strong></p>
 <ul>
-<li>AS transformer spans <strong>waves A–U</strong> — structural core, state machines (regions + transitions + triggers), activities (pins, object flows, guarded edges), requirements + the verification chain (verdict return, objective choreography, Refine/Trace), use cases + actors, ports/interfaces incl. conjugation and FullPort → PartUsage, imports, associations + <strong>AS multiplicities</strong>, InformationFlows, interactions, value-specification literals, <strong>allocations</strong> (end usages typed by the mapped end definitions), probability/rate metadata</li>
+<li>AS transformer spans <strong>waves A–AB</strong> — structural core, state machines (regions + transitions + triggers), activities (pins, object flows, guarded edges, <strong>control nodes complete</strong>, <strong>activity variables</strong>), requirements + the verification chain (verdict return, objective choreography, Refine/Trace), use cases + actors, ports/interfaces incl. conjugation and FullPort → PartUsage, imports, associations + <strong>AS multiplicities</strong>, InformationFlows, <strong>interactions</strong> (AS + textual emission), value-specification literals, <strong>allocations</strong> (end usages typed by the mapped end definitions), probability/rate metadata, <strong>accept-event machinery</strong>, send-signal/send-object, call-behavior/call-operation/broadcast</li>
 <li>Documented elisions ride the file's realization table (association-end qualifiers/defaults, conjugated-port typing, use-case objectives, function synthesis/assignments, guard and object-flow tail forms); anything truly unmapped raises <code>UnmappedFeature</code></li>
-</ul>
-<p><strong><code>sysmlpy</code> — SysML v2 reader / interchange</strong></p>
-<ul>
-<li>Interaction syntax is currently mapped by <code>umlmeta</code> but elided because the <code>sysmlpy</code> reader has no interaction element</li>
 </ul>
 <p><strong>Evidence boundary</strong></p>
 <ul>
