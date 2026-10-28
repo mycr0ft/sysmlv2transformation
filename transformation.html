@@ -757,7 +757,7 @@ section.compact p { margin-bottom: 7px; }
 <span class="line"><span>v1 model ──> AS transformer                     ──> R2 AS graph   ─┘</span></span>
 <span class="line"><span></span></span></code></pre>
 <p>The AS graph renders to <strong>byte-identical notation</strong> with the textual pipeline — checked, not hoped for.</p>
-<p><strong>481 checks across 15 suites, all green.</strong></p>
+<p><strong>551 checks across 19 suites, all green (v0.2.0).</strong></p>
 <footer>October SysML v2 Exchange — INCOSE | Jon R. Fox, GTRI</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-footer="October SysML v2 Exchange — INCOSE | Jon R. Fox, GTRI" data-theme="default" data-style="section.compact { font-size: 22px; }
@@ -1287,9 +1287,9 @@ section.compact p { margin-bottom: 7px; }
 <h2 id="current-limits-the-honest-slide">Current limits (the honest slide)</h2>
 <p><strong><code>umlmeta</code> — transformation / abstract syntax</strong></p>
 <ul>
-<li>AS-transformer wave A: core structural mappings (blocks/parts/attributes/enums/constraints/generalizations/docs)</li>
-<li>Later waves: behaviors, ports, state machines, and requirements in the <strong>AS graph</strong>; these are already done in the <em>textual</em> pipeline</li>
-<li>Multiplicities are carried in emitted text; AS storage is elided because derived-union bounds are not settable</li>
+<li>AS transformer grew from the wave-A subset to <strong>waves A–H in v0.2.0</strong>: use cases + actors, interfaces → PortDefinition, imports + recursive namespaces, associations, and InformationFlows — with the multiplicity elision closed (AS MultiplicityRange carrier for properties, association ends, parameters)</li>
+<li>Waves I–N landed the same day: interaction machinery AS-side, conjugation, FullPort → PartUsage with PortData metadata, activity pins + object-flow ends, transition-from-initial wiring, opaque bodies</li>
+<li>Still textual-pipeline-only in the AS graph: full state machines and requirements</li>
 </ul>
 <p><strong><code>sysmlpy</code> — SysML v2 reader / interchange</strong></p>
 <ul>

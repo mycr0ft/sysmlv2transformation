@@ -326,7 +326,7 @@ v1 model ──> AS transformer                     ──> R2 AS graph   ─┘
 
 The AS graph renders to **byte-identical notation** with the textual pipeline — checked, not hoped for.
 
-**481 checks across 15 suites, all green.**
+**551 checks across 19 suites, all green (v0.2.0).**
 
 ---
 
@@ -542,9 +542,9 @@ Diffs across revisions: `mdzip_diff.py before.mdzip after.mdzip`.
 
 **`umlmeta` — transformation / abstract syntax**
 
-- AS-transformer wave A: core structural mappings (blocks/parts/attributes/enums/constraints/generalizations/docs)
-- Later waves: behaviors, ports, state machines, and requirements in the **AS graph**; these are already done in the *textual* pipeline
-- Multiplicities are carried in emitted text; AS storage is elided because derived-union bounds are not settable
+- AS transformer grew from the wave-A subset to **waves A–H in v0.2.0**: use cases + actors, interfaces → PortDefinition, imports + recursive namespaces, associations, and InformationFlows — with the multiplicity elision closed (AS MultiplicityRange carrier for properties, association ends, parameters)
+- Waves I–N landed the same day: interaction machinery AS-side, conjugation, FullPort → PartUsage with PortData metadata, activity pins + object-flow ends, transition-from-initial wiring, opaque bodies
+- Still textual-pipeline-only in the AS graph: full state machines and requirements
 
 **`sysmlpy` — SysML v2 reader / interchange**
 
